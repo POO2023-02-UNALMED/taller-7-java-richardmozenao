@@ -2,7 +2,7 @@ package comunicacion;
 
 public class Tesis extends Escrito{
     String idea;
-    static String[] argumentos;
+    String[] argumentos;
     String conclusion;
     String referencias;
     String interpretacion;
@@ -57,7 +57,7 @@ public class Tesis extends Escrito{
     }
 
     public int palabrasTotales(){
-        return
+        return this.getPaginas()*5;
     }
     public String interpretacion(){
         return interpretacion;

@@ -27,7 +27,7 @@ public class Fabula extends Escrito{
     }
 
     public int palabrasTotales(){
-        return
+        return this.getPaginas();
     }
 
     public String interpretacion(){
@@ -39,4 +39,5 @@ public class Fabula extends Escrito{
         r += this.ensenanza+"\n";
         return r;
     }
+
 }
