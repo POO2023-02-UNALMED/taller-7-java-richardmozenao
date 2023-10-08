@@ -14,17 +14,17 @@ public class Libro extends Escrito{
         this.interpretacion = interpretacion;       
     }
     
-    public int palabrasTotales(){
-        return this.getPaginas()*2;
+    public int palabrasTotales(int palabrasPagina){
+        return this.getPaginas()*2*palabrasPagina;
     }
     public String interpretacion(){
         return interpretacion;
     }
     public String toString(){
-        String r = resumen();
+        String r = resumen() + "\n";
         r += this.co_autor + "\n";
         r += this.editorial + "\n";
-        r += this.edicion + "\n";
+        r += this.edicion;
         return r;
     }
 
